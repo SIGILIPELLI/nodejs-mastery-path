@@ -1,0 +1,113 @@
+site_name: Node.js Mastery Path
+site_description: A structured, module-wise Node.js program — the runtime, event loop, streams, Express APIs, databases, auth, testing, and production deployment.
+site_url: https://sigilipelli.github.io/nodejs-mastery-path/
+repo_url: https://github.com/sigilipelli/nodejs-mastery-path
+repo_name: nodejs-mastery-path
+
+theme:
+  name: material
+  favicon: assets/favicon.svg
+  custom_dir: docs/overrides
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - navigation.footer
+    - navigation.indexes
+    - toc.follow
+    - content.code.copy
+    - content.code.annotate
+    - search.suggest
+    - search.highlight
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+extra_css:
+  - stylesheets/extra.css
+  - stylesheets/progress-tracker.css
+
+extra_javascript:
+  - javascripts/progress-tracker.js
+
+nav:
+  - Home: index.md
+  - Privacy Policy: privacy.md
+  - License: license.md
+  - "Level 1 · Entry":
+      - Overview: level-1/index.md
+      - "01 · What Node.js Is: V8 + libuv": level-1/01-what-is-node.md
+      - "02 · Installing Node & Managing Versions": level-1/02-installing-node-nvm.md
+      - "03 · Modules: ES Modules & CommonJS": level-1/03-modules-esm-cjs.md
+      - "04 · npm & package.json": level-1/04-npm-package-json.md
+      - "05 · Files & Paths: fs and path": level-1/05-fs-and-path.md
+      - "06 · Async Patterns: Callbacks to async/await": level-1/06-async-patterns.md
+      - "07 · Events & EventEmitter": level-1/07-events-eventemitter.md
+      - "08 · A Raw HTTP Server with node:http": level-1/08-raw-http-server.md
+      - "09 · Environment Variables & Configuration": level-1/09-env-config.md
+      - "10 · Project — A Real CLI Tool": level-1/10-project-cli-tool.md
+  - "Level 2 · Intermediate":
+      - Overview: level-2/index.md
+      - "01 · Express Fundamentals": level-2/01-express-fundamentals.md
+      - "02 · Routing & Middleware": level-2/02-routing-middleware.md
+      - "03 · REST API Design": level-2/03-rest-api-design.md
+      - "04 · Validating Input with Zod": level-2/04-validation.md
+      - "05 · Error Handling": level-2/05-error-handling.md
+      - "06 · PostgreSQL with Kysely": level-2/06-databases-postgres.md
+      - "07 · Authentication: Sessions, JWT & Password Hashing": level-2/07-authentication.md
+      - "08 · Testing with node:test & Supertest": level-2/08-testing.md
+      - "09 · Structured Logging with Pino": level-2/09-logging.md
+      - "10 · Project — A REST API with Auth": level-2/10-project-rest-api-auth.md
+  - "Level 3 · Advanced":
+      - Overview: level-3/index.md
+      - "01 · The Event Loop in Depth": level-3/01-event-loop-deep-dive.md
+      - "02 · Streams & Backpressure": level-3/02-streams-backpressure.md
+      - "03 · Buffers & Binary Data": level-3/03-buffers.md
+      - "04 · Worker Threads & Child Processes": level-3/04-worker-threads-child-processes.md
+      - "05 · Clustering & Using Every Core": level-3/05-clustering.md
+      - "06 · Caching with Redis": level-3/06-caching-redis.md
+      - "07 · WebSockets": level-3/07-websockets.md
+      - "08 · File Uploads": level-3/08-file-uploads.md
+      - "09 · Security for Node Services": level-3/09-security.md
+      - "10 · Project — A Real-Time Chat App": level-3/10-project-realtime-app.md
+  - "Level 4 · Master":
+      - Overview: level-4/index.md
+      - "01 · Performance Profiling & Memory Leaks": level-4/01-profiling-memory-leaks.md
+      - "02 · Diagnostics in Production": level-4/02-diagnostics.md
+      - "03 · TypeScript for Node": level-4/03-typescript-for-node.md
+      - "04 · Architecture: Layered & Hexagonal": level-4/04-architecture.md
+      - "05 · Queues & Background Jobs": level-4/05-queues-background-jobs.md
+      - "06 · Microservices Communication": level-4/06-microservices-communication.md
+      - "07 · Containerizing & Deploying": level-4/07-containerize-deploy.md
+      - "08 · Observability with OpenTelemetry": level-4/08-observability.md
+      - "09 · Graceful Shutdown & Reliability": level-4/09-graceful-shutdown-reliability.md
+      - "10 · Capstone — A Production-Ready Service": level-4/10-capstone.md
