@@ -10,7 +10,7 @@ type system that catches mistakes — wrong argument types, misspelled propertie
 scary. This lesson focuses on the Node-specific side: how TypeScript code actually gets
 executed, how to configure it for ES modules, and how to type an Express service without
 fighting the framework. For the language itself, see the
-[TypeScript Mastery Path](https://sigilipelli.github.io/typescript-mastery-path/).
+[TypeScript Mastery Path](https://learnmasterypath.com/typescript-mastery-path/).
 
 ## Two jobs: type checking and running
 

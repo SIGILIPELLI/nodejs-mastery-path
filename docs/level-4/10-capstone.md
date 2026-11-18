@@ -248,5 +248,5 @@ job claiming, Redis `INCR` for counters, idempotency keys for retried requests.
 Complete the capstone. When you finish, write a one-page retrospective: what broke first
 under load, which lesson's technique saved the most time, and what you would change if the
 service had to handle ten times the traffic. Then compare your design with the reasoning in
-the [System Design Mastery Path](https://sigilipelli.github.io/system-design-mastery-path/)
+the [System Design Mastery Path](https://learnmasterypath.com/system-design-mastery-path/)
 — which of its patterns did you end up needing?

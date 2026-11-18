@@ -30,7 +30,7 @@ already built by hand.
 
 - Working knowledge of modern JavaScript: `const`/`let`, arrow functions, destructuring,
   classes, template literals, and the basics of promises. The
-  [JavaScript Mastery Path](https://sigilipelli.github.io/javascript-mastery-path/)
+  [JavaScript Mastery Path](https://learnmasterypath.com/javascript-mastery-path/)
   covers these if you need them.
 - A terminal you are comfortable in, and `curl` for poking at HTTP servers.
 - A current Node release (lesson 02 shows how to install one). All code uses ES modules.

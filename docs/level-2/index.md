@@ -31,7 +31,7 @@ engine.
 
 - Level 1, especially the raw HTTP server (lesson 08) and configuration (lesson 09).
 - Basic SQL: `SELECT`, `INSERT`, `UPDATE`, `DELETE`, `JOIN`, and what a primary key and
-  foreign key are. The [SQL Mastery Path](https://sigilipelli.github.io/sql-mastery-path/)
+  foreign key are. The [SQL Mastery Path](https://learnmasterypath.com/sql-mastery-path/)
   covers these.
 - For running the API outside tests: a PostgreSQL server (local install or a container).
   The test suite itself runs without one, using an in-process Postgres build.

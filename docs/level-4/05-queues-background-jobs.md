@@ -147,7 +147,7 @@ A real worker process loops: claim a job; if none, sleep briefly (or use Postgre
 **The big advantage of a database queue:** you can enqueue in the **same transaction** as
 the business write. "Create user" and "enqueue welcome email" commit together or not at
 all. With a separate broker you need the *transactional outbox* pattern to get the same
-guarantee (see the [System Design Mastery Path](https://sigilipelli.github.io/system-design-mastery-path/)).
+guarantee (see the [System Design Mastery Path](https://learnmasterypath.com/system-design-mastery-path/)).
 
 ## The same idea with BullMQ
 
