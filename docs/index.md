@@ -88,7 +88,7 @@ ES modules and the `node:` prefix for built-ins, and target a current Node relea
 Start here → [Level 1 · Entry](level-1/index.md)
 
 
-🎥 **Prefer video?** Watch the [Mastery Path video series](https://youtube.com/@sigilipelli) on YouTube — Shorts and full walkthroughs of lessons across the series.
+🎥 **Prefer video?** Watch the [Mastery Path video series](https://youtube.com/@learnmasterypath) on YouTube — Shorts and full walkthroughs of lessons across the series.
 
 ## More from the Mastery Path series
 
