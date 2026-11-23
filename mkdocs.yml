@@ -87,8 +87,8 @@ not_in_nav: |
 
 nav:
   - Home: index.md
-  - "💼 Interview Questions": interview-questions.md
-  - "📋 Cheat Sheet": cheat-sheet.md
+  - Interview Questions: interview-questions.md
+  - Cheat Sheet: cheat-sheet.md
   - "Level 1 · Entry":
       - Overview: level-1/index.md
       - "01 · What Node.js Is: V8 + libuv": level-1/01-what-is-node.md
@@ -137,5 +137,5 @@ nav:
       - "08 · Observability with OpenTelemetry": level-4/08-observability.md
       - "09 · Graceful Shutdown & Reliability": level-4/09-graceful-shutdown-reliability.md
       - "10 · Capstone — A Production-Ready Service": level-4/10-capstone.md
-  - "🎯 Final Quiz": quiz.md
+  - Final Quiz: quiz.md
 
