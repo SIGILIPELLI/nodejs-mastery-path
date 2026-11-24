@@ -1,0 +1,4227 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="180 Node.js interview questions with answers and explanations, from beginner to advanced, organised by level. Free, from the Node.js Mastery Path.">
+      
+      
+      
+        <link rel="canonical" href="https://learnmasterypath.com/nodejs-mastery-path/interview-questions/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../cheat-sheet/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/favicon.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.2">
+    
+    
+  
+  <title>Node.js Interview Questions and Answers (180 Questions)</title>
+
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.57a0d79d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.fb2fffe2.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+      <link rel="stylesheet" href="../stylesheets/progress-tracker.css">
+    
+      <link rel="stylesheet" href="../stylesheets/final-quiz.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-05VBGCXN12"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-05VBGCXN12');
+  </script>
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mastery Path">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="Node.js Interview Questions and Answers (180 Questions)">
+  <meta property="og:description" content="180 Node.js interview questions with answers and explanations, from beginner to advanced, organised by level. Free, from the Node.js Mastery Path.">
+  <meta property="og:url" content="https://learnmasterypath.com/nodejs-mastery-path/interview-questions/">
+  <meta property="og:image" content="https://learnmasterypath.com/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Mastery Path: free structured courses, beginner to master">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Node.js Interview Questions and Answers (180 Questions)">
+  <meta name="twitter:description" content="180 Node.js interview questions with answers and explanations, from beginner to advanced, organised by level. Free, from the Node.js Mastery Path.">
+  <meta name="twitter:image" content="https://learnmasterypath.com/og-image.png">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9440969811959397"
+     crossorigin="anonymous"></script><script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Mastery Path", "item": "https://learnmasterypath.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Node.js Mastery Path", "item": "https://learnmasterypath.com/nodejs-mastery-path/"},
+      {"@type": "ListItem", "position": 3, "name": "Interview Questions", "item": "https://learnmasterypath.com/nodejs-mastery-path/interview-questions/"}
+    ]
+  }
+  </script>
+  <style>
+    .md-banner a:hover { text-decoration: underline !important; }
+    .mp-related { margin-top: 2.4rem; padding-top: 1rem; border-top: 1px solid var(--md-default-fg-color--lightest); font-size: .78rem; }
+    .mp-related h2 { font-size: .9rem; margin: 0 0 .5rem; }
+    .mp-related ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .4rem .9rem; }
+    .mp-related li { margin: 0 !important; }
+  </style>
+  <script type="application/json" id="mp-course-meta">{"home": false, "id": "nodejs-mastery-path", "name": "Node.js Mastery Path", "repo": "https://github.com/sigilipelli/nodejs-mastery-path", "src": "interview-questions.md", "url": "https://learnmasterypath.com/nodejs-mastery-path/"}</script>
+  <link rel="stylesheet" href="https://learnmasterypath.com/assets/learn.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+  <link rel="stylesheet" href="https://learnmasterypath.com/assets/course.css?v=1">
+  <script src="https://learnmasterypath.com/assets/learn.js" defer></script>
+  <script src="https://learnmasterypath.com/assets/signup.js" defer></script>
+
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#nodejs-interview-questions-and-answers" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+        <aside class="md-banner">
+          <div class="md-banner__inner md-grid md-typeset">
+            
+            
+  <a href="https://learnmasterypath.com/" style="color: inherit; text-decoration: none;">
+    &larr; Mastery Path &middot; all 100+ free courses
+  </a>
+  <span style="opacity: .6; margin: 0 .6em;">|</span>
+  <a href="https://learnmasterypath.com/search/" style="color: inherit; text-decoration: none;">Search all courses</a>
+  <span style="opacity: .6; margin: 0 .6em;">|</span>
+  <a href="https://learnmasterypath.com/resume/" style="color: inherit; font-weight: 700; text-decoration: none;">
+    Got the skills? Free resume ATS check &rarr;
+  </a>
+
+          </div>
+          
+        </aside>
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Node.js Mastery Path" class="md-header__button md-logo" aria-label="Node.js Mastery Path" data-md-component="logo">
+      <svg class="mp-mark" viewBox="0 0 160 160" role="img" aria-label="Mastery Path logo">
+  <circle cx="80" cy="80" r="74" fill="#FAF7EF" stroke="#2FA98D" stroke-width="5"/>
+  <rect class="mp-bar mp-bar-1" x="36" y="90" width="17" height="24" rx="5" fill="#2FA98D"/>
+  <rect class="mp-bar mp-bar-2" x="59" y="74" width="17" height="40" rx="5" fill="#7FC9B7"/>
+  <rect class="mp-bar mp-bar-3" x="82" y="56" width="17" height="58" rx="5" fill="#E0B457"/>
+  <rect class="mp-bar mp-bar-4" x="105" y="38" width="17" height="76" rx="5" fill="#C97B4A"/>
+  <circle class="mp-dot" cx="44.5" cy="82" r="7" fill="#22261f"/>
+</svg>
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Node.js Mastery Path
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Node.js Interview Questions and Answers (180 Questions)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/sigilipelli/nodejs-mastery-path" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    nodejs-mastery-path
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Interview Questions
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../cheat-sheet/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Cheat Sheet
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../level-1/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 1 · Entry
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../level-2/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 2 · Intermediate
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../level-3/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 3 · Advanced
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../level-4/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Level 4 · Master
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../quiz/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Final Quiz
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Node.js Mastery Path" class="md-nav__button md-logo" aria-label="Node.js Mastery Path" data-md-component="logo">
+      <svg class="mp-mark" viewBox="0 0 160 160" role="img" aria-label="Mastery Path logo">
+  <circle cx="80" cy="80" r="74" fill="#FAF7EF" stroke="#2FA98D" stroke-width="5"/>
+  <rect class="mp-bar mp-bar-1" x="36" y="90" width="17" height="24" rx="5" fill="#2FA98D"/>
+  <rect class="mp-bar mp-bar-2" x="59" y="74" width="17" height="40" rx="5" fill="#7FC9B7"/>
+  <rect class="mp-bar mp-bar-3" x="82" y="56" width="17" height="58" rx="5" fill="#E0B457"/>
+  <rect class="mp-bar mp-bar-4" x="105" y="38" width="17" height="76" rx="5" fill="#C97B4A"/>
+  <circle class="mp-dot" cx="44.5" cy="82" r="7" fill="#22261f"/>
+</svg>
+    </a>
+    Node.js Mastery Path
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/sigilipelli/nodejs-mastery-path" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    nodejs-mastery-path
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Interview Questions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#level-1-entry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 1 · Entry
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 1 · Entry">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-what-nodejs-is-v8-libuv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · What Node.js Is: V8 + libuv
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-installing-node-managing-versions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Installing Node &amp; Managing Versions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-modules-es-modules-commonjs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Modules: ES Modules &amp; CommonJS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-npm-packagejson" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · npm &amp; package.json
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-files-paths-fs-and-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Files &amp; Paths: fs and path
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-async-patterns-callbacks-to-asyncawait" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Async Patterns: Callbacks to async/await
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-events-eventemitter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Events &amp; EventEmitter
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-a-raw-http-server-with-nodehttp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · A Raw HTTP Server with node:http
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-environment-variables-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Environment Variables &amp; Configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-a-real-cli-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — A Real CLI Tool
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-2-intermediate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 2 · Intermediate
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 2 · Intermediate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-express-fundamentals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · Express Fundamentals
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-routing-middleware" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Routing &amp; Middleware
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-rest-api-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · REST API Design
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-validating-input-with-zod" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Validating Input with Zod
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-error-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Error Handling
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-postgresql-with-kysely" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · PostgreSQL with Kysely
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-authentication-sessions-jwt-password-hashing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Authentication: Sessions, JWT &amp; Password Hashing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-testing-with-nodetest-supertest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Testing with node:test &amp; Supertest
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-structured-logging-with-pino" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Structured Logging with Pino
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-a-rest-api-with-auth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — A REST API with Auth
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-3-advanced" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 3 · Advanced
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 3 · Advanced">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-the-event-loop-in-depth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · The Event Loop in Depth
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-streams-backpressure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Streams &amp; Backpressure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-buffers-binary-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Buffers &amp; Binary Data
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-worker-threads-child-processes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Worker Threads &amp; Child Processes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-clustering-using-every-core" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Clustering &amp; Using Every Core
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-caching-with-redis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Caching with Redis
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-websockets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · WebSockets
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-file-uploads" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · File Uploads
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-security-for-node-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Security for Node Services
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-a-real-time-chat-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — A Real-Time Chat App
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-4-master" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 4 · Master
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 4 · Master">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-performance-profiling-memory-leaks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · Performance Profiling &amp; Memory Leaks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-diagnostics-in-production" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Diagnostics in Production
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-typescript-for-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · TypeScript for Node
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-architecture-layered-hexagonal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Architecture: Layered &amp; Hexagonal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-queues-background-jobs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Queues &amp; Background Jobs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-microservices-communication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Microservices Communication
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-containerizing-deploying" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Containerizing &amp; Deploying
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-observability-with-opentelemetry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Observability with OpenTelemetry
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-graceful-shutdown-reliability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Graceful Shutdown &amp; Reliability
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-capstone-a-production-ready-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Capstone — A Production-Ready Service
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mixed-questions-across-all-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mixed questions across all levels
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-coding-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Practical coding questions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practical coding questions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#retry-with-exponential-backoff" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Retry with exponential backoff
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parse-access-log-lines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parse access-log lines
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cheat-sheet/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Cheat Sheet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../level-1/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 1 · Entry
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_4" id="__nav_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 1 · Entry
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/01-what-is-node/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · What Node.js Is: V8 + libuv
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/02-installing-node-nvm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Installing Node & Managing Versions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/03-modules-esm-cjs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · Modules: ES Modules & CommonJS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/04-npm-package-json/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · npm & package.json
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/05-fs-and-path/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Files & Paths: fs and path
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/06-async-patterns/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Async Patterns: Callbacks to async/await
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/07-events-eventemitter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Events & EventEmitter
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/08-raw-http-server/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · A Raw HTTP Server with node:http
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/09-env-config/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Environment Variables & Configuration
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-1/10-project-cli-tool/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Project — A Real CLI Tool
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../level-2/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 2 · Intermediate
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_5" id="__nav_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 2 · Intermediate
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/01-express-fundamentals/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · Express Fundamentals
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/02-routing-middleware/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Routing & Middleware
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/03-rest-api-design/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · REST API Design
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/04-validation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Validating Input with Zod
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/05-error-handling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Error Handling
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/06-databases-postgres/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · PostgreSQL with Kysely
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/07-authentication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Authentication: Sessions, JWT & Password Hashing
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/08-testing/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Testing with node:test & Supertest
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/09-logging/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Structured Logging with Pino
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-2/10-project-rest-api-auth/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Project — A REST API with Auth
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../level-3/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 3 · Advanced
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_6" id="__nav_6_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 3 · Advanced
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/01-event-loop-deep-dive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · The Event Loop in Depth
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/02-streams-backpressure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Streams & Backpressure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/03-buffers/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · Buffers & Binary Data
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/04-worker-threads-child-processes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Worker Threads & Child Processes
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/05-clustering/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Clustering & Using Every Core
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/06-caching-redis/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Caching with Redis
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/07-websockets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · WebSockets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/08-file-uploads/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · File Uploads
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/09-security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Security for Node Services
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-3/10-project-realtime-app/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Project — A Real-Time Chat App
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../level-4/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Level 4 · Master
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7" id="__nav_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Level 4 · Master
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/01-profiling-memory-leaks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · Performance Profiling & Memory Leaks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/02-diagnostics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Diagnostics in Production
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/03-typescript-for-node/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · TypeScript for Node
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/04-architecture/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Architecture: Layered & Hexagonal
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/05-queues-background-jobs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Queues & Background Jobs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/06-microservices-communication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Microservices Communication
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/07-containerize-deploy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Containerizing & Deploying
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/08-observability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Observability with OpenTelemetry
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/09-graceful-shutdown-reliability/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Graceful Shutdown & Reliability
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../level-4/10-capstone/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Capstone — A Production-Ready Service
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../quiz/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Final Quiz
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#level-1-entry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 1 · Entry
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 1 · Entry">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-what-nodejs-is-v8-libuv" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · What Node.js Is: V8 + libuv
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-installing-node-managing-versions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Installing Node &amp; Managing Versions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-modules-es-modules-commonjs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Modules: ES Modules &amp; CommonJS
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-npm-packagejson" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · npm &amp; package.json
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-files-paths-fs-and-path" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Files &amp; Paths: fs and path
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-async-patterns-callbacks-to-asyncawait" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Async Patterns: Callbacks to async/await
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-events-eventemitter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Events &amp; EventEmitter
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-a-raw-http-server-with-nodehttp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · A Raw HTTP Server with node:http
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-environment-variables-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Environment Variables &amp; Configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-a-real-cli-tool" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — A Real CLI Tool
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-2-intermediate" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 2 · Intermediate
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 2 · Intermediate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-express-fundamentals" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · Express Fundamentals
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-routing-middleware" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Routing &amp; Middleware
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-rest-api-design" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · REST API Design
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-validating-input-with-zod" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Validating Input with Zod
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-error-handling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Error Handling
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-postgresql-with-kysely" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · PostgreSQL with Kysely
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-authentication-sessions-jwt-password-hashing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Authentication: Sessions, JWT &amp; Password Hashing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-testing-with-nodetest-supertest" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Testing with node:test &amp; Supertest
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-structured-logging-with-pino" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Structured Logging with Pino
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-a-rest-api-with-auth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — A REST API with Auth
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-3-advanced" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 3 · Advanced
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 3 · Advanced">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-the-event-loop-in-depth" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · The Event Loop in Depth
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-streams-backpressure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Streams &amp; Backpressure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-buffers-binary-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · Buffers &amp; Binary Data
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-worker-threads-child-processes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Worker Threads &amp; Child Processes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-clustering-using-every-core" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Clustering &amp; Using Every Core
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-caching-with-redis" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Caching with Redis
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-websockets" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · WebSockets
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-file-uploads" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · File Uploads
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-security-for-node-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Security for Node Services
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-project-a-real-time-chat-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Project — A Real-Time Chat App
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#level-4-master" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Level 4 · Master
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Level 4 · Master">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#01-performance-profiling-memory-leaks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        01 · Performance Profiling &amp; Memory Leaks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#02-diagnostics-in-production" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        02 · Diagnostics in Production
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#03-typescript-for-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        03 · TypeScript for Node
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#04-architecture-layered-hexagonal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        04 · Architecture: Layered &amp; Hexagonal
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#05-queues-background-jobs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        05 · Queues &amp; Background Jobs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#06-microservices-communication" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        06 · Microservices Communication
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#07-containerizing-deploying" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        07 · Containerizing &amp; Deploying
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#08-observability-with-opentelemetry" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        08 · Observability with OpenTelemetry
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#09-graceful-shutdown-reliability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        09 · Graceful Shutdown &amp; Reliability
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-capstone-a-production-ready-service" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10 · Capstone — A Production-Ready Service
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mixed-questions-across-all-levels" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mixed questions across all levels
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-coding-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Practical coding questions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Practical coding questions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#retry-with-exponential-backoff" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Retry with exponential backoff
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parse-access-log-lines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Parse access-log lines
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+  
+                  
+
+
+  
+  
+
+
+<h1 id="nodejs-interview-questions-and-answers">Node.js Interview Questions and Answers<a class="headerlink" href="#nodejs-interview-questions-and-answers" title="Permanent link">&para;</a></h1>
+<p><strong>180 questions</strong> with the correct answer and a short explanation, organised from beginner (Level 1) to advanced (Level 4). Every question comes from a lesson in the free Node.js Mastery Path, so you can open the lesson to go deeper.</p>
+<div class="admonition tip">
+<p class="admonition-title">Practise, don't just read</p>
+<p>Each lesson also ends with an interactive quiz, and the <a href="../quiz/">final quiz</a> tests all four levels. Try to answer each question below before reading the answer.</p>
+</div>
+<h2 id="level-1-entry">Level 1 · Entry<a class="headerlink" href="#level-1-entry" title="Permanent link">&para;</a></h2>
+<h3 id="01-what-nodejs-is-v8-libuv"><a href="../level-1/01-what-is-node/">01 · What Node.js Is: V8 + libuv</a><a class="headerlink" href="#01-what-nodejs-is-v8-libuv" title="Permanent link">&para;</a></h3>
+<p><strong>Q1.</strong> What is Node.js, in the lesson's framing?</p>
+<p><strong>Answer:</strong> A runtime that runs JavaScript outside a browser, with built-in modules for the OS</p>
+<p>It's the node executable plus built-in modules for files, sockets, processes, timers and cryptography.</p>
+<p><strong>Q2.</strong> What does V8 do, and what does libuv do?</p>
+<p><strong>Answer:</strong> V8 executes JavaScript; libuv provides the event loop and asynchronous OS access</p>
+<p>V8 knows nothing about files or networks.</p>
+<p><strong>Q3.</strong> A setTimeout of 10 ms is queued, then a 500 ms busy loop runs. Roughly when does the timer fire?</p>
+<p><strong>Answer:</strong> After the loop, around 504 ms, because the thread was busy</p>
+<p>The event loop only checks timers once the current JavaScript finishes.</p>
+<p><strong>Q4.</strong> What is the 'good consequence' of one main thread?</p>
+<p><strong>Answer:</strong> No locks or data races on your objects</p>
+<p>The bad one: a long-running function makes everything else wait.</p>
+<h3 id="02-installing-node-managing-versions"><a href="../level-1/02-installing-node-nvm/">02 · Installing Node &amp; Managing Versions</a><a class="headerlink" href="#02-installing-node-managing-versions" title="Permanent link">&para;</a></h3>
+<p><strong>Q5.</strong> Which Node major versions become LTS?</p>
+<p><strong>Answer:</strong> Even-numbered ones, promoted in October</p>
+<p>Odd-numbered majors are Current only and are abandoned after a few months.</p>
+<p><strong>Q6.</strong> What does <code>node -p "process.release.lts"</code> print on a Current build?</p>
+<p><strong>Answer:</strong> undefined (on LTS builds it prints the codename)</p>
+<p>It reveals whether you're running an LTS build.</p>
+<p><strong>Q7.</strong> Why is a version manager recommended over the official installer?</p>
+<p><strong>Answer:</strong> It installs versions in your home directory and switches per shell or project, with no sudo</p>
+<p>The installer is fine for a single version, but upgrades mean reinstalling and global packages may need sudo.</p>
+<p><strong>Q8.</strong> What should you use for servers and anything you deploy?</p>
+<p><strong>Answer:</strong> An Active or Maintenance LTS version</p>
+<p>Check github.com/nodejs/release for the schedule.</p>
+<h3 id="03-modules-es-modules-commonjs"><a href="../level-1/03-modules-esm-cjs/">03 · Modules: ES Modules &amp; CommonJS</a><a class="headerlink" href="#03-modules-es-modules-commonjs" title="Permanent link">&para;</a></h3>
+<p><strong>Q9.</strong> How does Node decide a .js file's module type?</p>
+<p><strong>Answer:</strong> The nearest package.json: "type": "module" means ESM; commonjs or no type means CommonJS</p>
+<p>*.mjs is always ESM and *.cjs always CommonJS.</p>
+<p><strong>Q10.</strong> What must relative imports include in ESM?</p>
+<p><strong>Answer:</strong> The file extension, e.g. './math.js'</p>
+<p>ESM resolution doesn't guess extensions or look for index.js.</p>
+<p><strong>Q11.</strong> What replaces __dirname and __filename in ESM?</p>
+<p><strong>Answer:</strong> import.meta.dirname and import.meta.filename, or import.meta.url with new URL()</p>
+<p>require is also unavailable by default.</p>
+<p><strong>Q12.</strong> What does a dynamic import('./math.mjs') return?</p>
+<p><strong>Answer:</strong> A promise</p>
+<p>Top-level await also works in ESM.</p>
+<h3 id="04-npm-packagejson"><a href="../level-1/04-npm-package-json/">04 · npm &amp; package.json</a><a class="headerlink" href="#04-npm-packagejson" title="Permanent link">&para;</a></h3>
+<p><strong>Q13.</strong> What does ^5.1.0 accept?</p>
+<p><strong>Answer:</strong> &gt;=5.1.0 &lt;6.0.0</p>
+<p>~5.1.0 accepts patches only; for 0.x versions, caret is stricter (^0.4.2 means &gt;=0.4.2 &lt;0.5.0).</p>
+<p><strong>Q14.</strong> How does <code>npm ci</code> differ from <code>npm install</code>?</p>
+<p><strong>Answer:</strong> It installs exactly what the lockfile says, deletes node_modules first, and fails if package.json and the lockfile disagree</p>
+<p>Use it in CI and Docker builds for reproducibility.</p>
+<p><strong>Q15.</strong> What does "private": true prevent?</p>
+<p><strong>Answer:</strong> An accidental npm publish of an application</p>
+<p>It's typical for applications.</p>
+<p><strong>Q16.</strong> Why have devDependencies?</p>
+<p><strong>Answer:</strong> They're only needed to develop, test or build, and <code>npm ci --omit=dev</code> skips them, shrinking container images</p>
+<p>dependencies are needed at runtime.</p>
+<h3 id="05-files-paths-fs-and-path"><a href="../level-1/05-fs-and-path/">05 · Files &amp; Paths: fs and path</a><a class="headerlink" href="#05-files-paths-fs-and-path" title="Permanent link">&para;</a></h3>
+<p><strong>Q17.</strong> Which fs style is the default for application code and servers?</p>
+<p><strong>Answer:</strong> fs/promises with await</p>
+<p>*Sync suits startup code, CLIs and build scripts, where blocking is harmless.</p>
+<p><strong>Q18.</strong> Why prefer attempting the operation and handling errors over checking first with access?</p>
+<p><strong>Answer:</strong> Another process can change the file between the check and the use (a TOCTOU race)</p>
+<p>Handle errors by code, such as ENOENT, and rethrow real problems like EACCES.</p>
+<p><strong>Q19.</strong> What does mkdir('data/cache', { recursive: true }) do?</p>
+<p><strong>Answer:</strong> Like mkdir -p: creates parents and doesn't error if it exists</p>
+<p>rm with recursive and force is like rm -rf — careful.</p>
+<p><strong>Q20.</strong> When should you use createReadStream?</p>
+<p><strong>Answer:</strong> For large files, or to start processing before the whole file is in memory</p>
+<p>readFile loads the whole file.</p>
+<h3 id="06-async-patterns-callbacks-to-asyncawait"><a href="../level-1/06-async-patterns/">06 · Async Patterns: Callbacks to async/await</a><a class="headerlink" href="#06-async-patterns-callbacks-to-asyncawait" title="Permanent link">&para;</a></h3>
+<p><strong>Q21.</strong> What is the error-first callback convention?</p>
+<p><strong>Answer:</strong> The last argument is a callback whose first parameter is an error (or null)</p>
+<p>For example fs.readFile(file, enc, (err, text) =&gt; ...).</p>
+<p><strong>Q22.</strong> Why can't a try/catch around the original call catch an exception thrown inside a callback?</p>
+<p><strong>Answer:</strong> The stack has already unwound by the time the callback runs</p>
+<p>That's one of the problems with callbacks, alongside the callback pyramid.</p>
+<p><strong>Q23.</strong> What does util.promisify do?</p>
+<p><strong>Answer:</strong> Converts an error-first callback function into a promise-returning one</p>
+<p>Many built-ins also have promise versions such as node:fs/promises.</p>
+<p><strong>Q24.</strong> Why wrap errors with new Error(msg, { cause: err })?</p>
+<p><strong>Answer:</strong> It preserves the original root cause for logs</p>
+<p>Use it when rethrowing with more context.</p>
+<h3 id="07-events-eventemitter"><a href="../level-1/07-events-eventemitter/">07 · Events &amp; EventEmitter</a><a class="headerlink" href="#07-events-eventemitter" title="Permanent link">&para;</a></h3>
+<p><strong>Q25.</strong> In the order queue example, when does <code>added #1</code> print relative to <code>before add</code> and <code>after add</code>?</p>
+<p><strong>Answer:</strong> Between them, because emit is synchronous</p>
+<p>Listeners run synchronously inside emit.</p>
+<p><strong>Q26.</strong> What happens if an EventEmitter emits 'error' with no listener?</p>
+<p><strong>Answer:</strong> The error is thrown and can crash the process</p>
+<p>That's why the example registers q.on('error', …) — the 'error' event is special.</p>
+<p><strong>Q27.</strong> Why did 'queue full - flushing' print only once even though the queue stayed full?</p>
+<p><strong>Answer:</strong> It was registered with once, which removes the listener after one call</p>
+<p>The listener count for 'added' stayed at 1.</p>
+<p><strong>Q28.</strong> What does events.once(emitter, name) return?</p>
+<p><strong>Answer:</strong> A promise for the next event, resolving to an array of its arguments</p>
+<p>It's the cleanest way to await something like a 'ready' event.</p>
+<h3 id="08-a-raw-http-server-with-nodehttp"><a href="../level-1/08-raw-http-server/">08 · A Raw HTTP Server with node:http</a><a class="headerlink" href="#08-a-raw-http-server-with-nodehttp" title="Permanent link">&para;</a></h3>
+<p><strong>Q29.</strong> What are req and res in node:http?</p>
+<p><strong>Answer:</strong> req is a readable stream (IncomingMessage); res is a writable stream (ServerResponse)</p>
+<p>req.url holds the path and query string only.</p>
+<p><strong>Q30.</strong> What happens if you forget res.end()?</p>
+<p><strong>Answer:</strong> The client hangs until it times out</p>
+<p>Always end every response path.</p>
+<p><strong>Q31.</strong> Why does readJsonBody cap the body size at MAX_BODY?</p>
+<p><strong>Answer:</strong> To reject oversized bodies with 413 instead of buffering unbounded input</p>
+<p>Invalid JSON returns 400.</p>
+<p><strong>Q32.</strong> How is the query string read in the example?</p>
+<p><strong>Answer:</strong> With new URL(req.url, base) and url.searchParams.get('q')</p>
+<p>The pathname is matched with regexes such as /^\/notes\/(\d+)$/.</p>
+<h3 id="09-environment-variables-configuration"><a href="../level-1/09-env-config/">09 · Environment Variables &amp; Configuration</a><a class="headerlink" href="#09-environment-variables-configuration" title="Permanent link">&para;</a></h3>
+<p><strong>Q33.</strong> What type are process.env values?</p>
+<p><strong>Answer:</strong> Always strings or undefined</p>
+<p>process.env.X = 1 stores '1', and assigning undefined stores 'undefined'.</p>
+<p><strong>Q34.</strong> Which takes precedence: a variable in the real environment or one in the .env file?</p>
+<p><strong>Answer:</strong> The real environment</p>
+<p>On a test run, PORT=5000 node --env-file=.env app.js used 5000, not the file's 4000.</p>
+<p><strong>Q35.</strong> How do current Node releases load .env files?</p>
+<p><strong>Answer:</strong> Natively with --env-file or process.loadEnvFile(), no dotenv needed</p>
+<p>--env-file-if-exists is available for optional files.</p>
+<p><strong>Q36.</strong> Why centralise and validate configuration in one module?</p>
+<p><strong>Answer:</strong> A typo then fails at startup instead of giving undefined at 3 a.m.</p>
+<p>It also shows what a service needs at a glance.</p>
+<h3 id="10-project-a-real-cli-tool"><a href="../level-1/10-project-cli-tool/">10 · Project — A Real CLI Tool</a><a class="headerlink" href="#10-project-a-real-cli-tool" title="Permanent link">&para;</a></h3>
+<p><strong>Q37.</strong> What do logstat's exit codes mean?</p>
+<p><strong>Answer:</strong> 0 success, 1 runtime failure (e.g. unreadable file), 2 usage error</p>
+<p>Conventional exit codes make a CLI scriptable.</p>
+<p><strong>Q38.</strong> How does logstat handle files larger than memory?</p>
+<p><strong>Answer:</strong> It processes line by line via readline and async iteration</p>
+<p>It also reads standard input when no file is given, so cat *.log | logstat works.</p>
+<p><strong>Q39.</strong> What does the bin entry in package.json do?</p>
+<p><strong>Answer:</strong> Maps a command name to a file; npm link or npm install -g puts an executable on your PATH</p>
+<p>The entry is { "logstat": "./bin/logstat.js" }.</p>
+<p><strong>Q40.</strong> Why keep parsing and statistics as pure functions?</p>
+<p><strong>Answer:</strong> They're easy to test and reuse; only the bin file touches process</p>
+<p>parse.js and stats.js do no I/O.</p>
+<h2 id="level-2-intermediate">Level 2 · Intermediate<a class="headerlink" href="#level-2-intermediate" title="Permanent link">&para;</a></h2>
+<h3 id="01-express-fundamentals"><a href="../level-2/01-express-fundamentals/">01 · Express Fundamentals</a><a class="headerlink" href="#01-express-fundamentals" title="Permanent link">&para;</a></h3>
+<p><strong>Q41.</strong> Which Express 5 change affects async handlers?</p>
+<p><strong>Answer:</strong> Rejected promises from async handlers are forwarded to error handlers automatically</p>
+<p>Another change: req.body is undefined, not {}, when no body parser ran.</p>
+<p><strong>Q42.</strong> What does express.json() replace from the raw http version?</p>
+<p><strong>Answer:</strong> readJsonBody (with a default 100 KB limit)</p>
+<p>res.json replaces sendJson, and app.get replaces the if chain.</p>
+<p><strong>Q43.</strong> What type are values in req.params?</p>
+<p><strong>Answer:</strong> Always strings</p>
+<p>/books/:id gives { id: '42' }.</p>
+<p><strong>Q44.</strong> What is in req.body without a body-parsing middleware?</p>
+<p><strong>Answer:</strong> undefined</p>
+<p>Mount express.json() to parse JSON bodies.</p>
+<h3 id="02-routing-middleware"><a href="../level-2/02-routing-middleware/">02 · Routing &amp; Middleware</a><a class="headerlink" href="#02-routing-middleware" title="Permanent link">&para;</a></h3>
+<p><strong>Q45.</strong> What distinguishes middleware from a route handler?</p>
+<p><strong>Answer:</strong> Both are (req, res, next); middleware calls next() to pass control on</p>
+<p>Auth, logging, CORS, rate limiting and body parsing all look the same: functions in a pipeline.</p>
+<p><strong>Q46.</strong> In what order does middleware run?</p>
+<p><strong>Answer:</strong> In the order registered, only for matching mount paths</p>
+<p>The lesson's order: helmet, json, logger, /admin guard, routers, 404, error handler.</p>
+<p><strong>Q47.</strong> What is the shape of Express error-handling middleware?</p>
+<p><strong>Answer:</strong> Four arguments (err, req, res, next), registered last</p>
+<p>The notFoundHandler comes just before it.</p>
+<p><strong>Q48.</strong> What changed in Express 5 route paths?</p>
+<p><strong>Answer:</strong> Wildcards must be named, like /files/*filepath, and regex characters are no longer special</p>
+<p>Old '/files/*' or '/:id?' forms need updating; use {/:section} for optional segments.</p>
+<h3 id="03-rest-api-design"><a href="../level-2/03-rest-api-design/">03 · REST API Design</a><a class="headerlink" href="#03-rest-api-design" title="Permanent link">&para;</a></h3>
+<p><strong>Q49.</strong> Which pair is correct for creating a resource?</p>
+<p><strong>Answer:</strong> POST /tasks returns 201 with a Location header</p>
+<p>Model nouns as resources and let HTTP methods be the verbs.</p>
+<p><strong>Q50.</strong> Which methods are idempotent?</p>
+<p><strong>Answer:</strong> GET, PUT and DELETE</p>
+<p>POST is neither safe nor idempotent, so retrying a create-payment POST is dangerous without idempotency keys.</p>
+<p><strong>Q51.</strong> What is the difference between 401 and 403?</p>
+<p><strong>Answer:</strong> 401: not authenticated; 403: authenticated but not allowed</p>
+<p>404 means no such resource.</p>
+<p><strong>Q52.</strong> What is the difference between PATCH and PUT?</p>
+<p><strong>Answer:</strong> PATCH sends only the fields to change; PUT sends the whole representation</p>
+<p>With PUT, missing fields mean remove or reset.</p>
+<h3 id="04-validating-input-with-zod"><a href="../level-2/04-validation/">04 · Validating Input with Zod</a><a class="headerlink" href="#04-validating-input-with-zod" title="Permanent link">&para;</a></h3>
+<p><strong>Q53.</strong> Why validate input at the edge?</p>
+<p><strong>Answer:</strong> So the rest of the code can trust its inputs' shape, or the client gets a clear 400</p>
+<p>Anything arriving over HTTP is untrusted, even an added "isAdmin": true.</p>
+<p><strong>Q54.</strong> What did CreateUser.parse({ email, name: '  Ada ', age: '36' }) return?</p>
+<p><strong>Answer:</strong> A new object: name trimmed to 'Ada', age coerced to 36, defaults added (role 'member', tags [])</p>
+<p>Use the parsed output, not the original input.</p>
+<p><strong>Q55.</strong> How does safeParse differ from parse?</p>
+<p><strong>Answer:</strong> It returns { success, data } or { success: false, error } instead of throwing a ZodError</p>
+<p>It's easier to turn into an HTTP response.</p>
+<p><strong>Q56.</strong> Why does a Zod schema count as 'one declaration, three benefits'?</p>
+<p><strong>Answer:</strong> Runtime validation, parsing (coercion, trimming, defaults), and a static TypeScript type</p>
+<p>Alternatives include Valibot, ArkType, Joi, Yup and Ajv.</p>
+<h3 id="05-error-handling"><a href="../level-2/05-error-handling/">05 · Error Handling</a><a class="headerlink" href="#05-error-handling" title="Permanent link">&para;</a></h3>
+<p><strong>Q57.</strong> What is an operational error?</p>
+<p><strong>Answer:</strong> An expected failure of a correct program, such as bad JSON, a missing record or a dropped DB connection</p>
+<p>You handle these with a 4xx, a retry or degraded behaviour.</p>
+<p><strong>Q58.</strong> What should you do for a programmer error (a bug) outside any request?</p>
+<p><strong>Answer:</strong> Let the process crash and be restarted, since state may be inconsistent</p>
+<p>For a bug inside a request, return 500, log loudly, and fix the code.</p>
+<p><strong>Q59.</strong> What does the errorHandler return to the client for status ≥ 500?</p>
+<p><strong>Answer:</strong> A generic 'internal server error', not the real message</p>
+<p>The details go to the log, not the client.</p>
+<p><strong>Q60.</strong> Why check res.headersSent in the error handler?</p>
+<p><strong>Answer:</strong> If a response has already started, delegate to the default handler with next(err)</p>
+<p>You can't send a second response.</p>
+<h3 id="06-postgresql-with-kysely"><a href="../level-2/06-databases-postgres/">06 · PostgreSQL with Kysely</a><a class="headerlink" href="#06-postgresql-with-kysely" title="Permanent link">&para;</a></h3>
+<p><strong>Q61.</strong> What do pg and Kysely each do?</p>
+<p><strong>Answer:</strong> pg is the driver (wire protocol and connection pool); Kysely is a type-safe query builder on top</p>
+<p>Kysely compiles to parameterized SQL and keeps you close to SQL.</p>
+<p><strong>Q62.</strong> How many Kysely instances (pools) should a process create?</p>
+<p><strong>Answer:</strong> One per process at startup, with db.destroy() on shutdown</p>
+<p>Pass it to your routers.</p>
+<p><strong>Q63.</strong> What are migrations?</p>
+<p><strong>Answer:</strong> Versioned scripts applied in order and recorded in a table so each runs once</p>
+<p>Kysely's Migrator runs files exporting up (and optionally down).</p>
+<p><strong>Q64.</strong> What is PGlite used for in the lesson?</p>
+<p><strong>Answer:</strong> A WebAssembly build of Postgres inside Node, handy for tests</p>
+<p>It's used for the Level 2 project's tests.</p>
+<h3 id="07-authentication-sessions-jwt-password-hashing"><a href="../level-2/07-authentication/">07 · Authentication: Sessions, JWT &amp; Password Hashing</a><a class="headerlink" href="#07-authentication-sessions-jwt-password-hashing" title="Permanent link">&para;</a></h3>
+<p><strong>Q65.</strong> Why not store a plain fast hash like SHA-256 of a password?</p>
+<p><strong>Answer:</strong> Attackers can guess billions of candidates per second on GPUs after a leak</p>
+<p>Use a deliberately slow, salted, memory-hard function: argon2id, scrypt or bcrypt.</p>
+<p><strong>Q66.</strong> Why does hashing the same password twice give different results?</p>
+<p><strong>Answer:</strong> A new random salt is generated each time</p>
+<p>The lesson shows (await hashPassword(p)) === stored is false.</p>
+<p><strong>Q67.</strong> Why use timingSafeEqual when comparing hashes?</p>
+<p><strong>Answer:</strong> To avoid leaking information via comparison timing</p>
+<p>Cost parameters are stored with each hash so they can be raised later.</p>
+<p><strong>Q68.</strong> What is the difference between authentication and authorization?</p>
+<p><strong>Answer:</strong> Authentication is who is making the request; authorization is whether they may do that</p>
+<p>Authorization is usually plain code like where user_id = req.user.id.</p>
+<h3 id="08-testing-with-nodetest-supertest"><a href="../level-2/08-testing/">08 · Testing with node:test &amp; Supertest</a><a class="headerlink" href="#08-testing-with-nodetest-supertest" title="Permanent link">&para;</a></h3>
+<p><strong>Q69.</strong> What does the built-in node:test runner need?</p>
+<p><strong>Answer:</strong> No test framework dependency at all (with node:assert)</p>
+<p>Add Supertest for HTTP-level tests without opening a real port.</p>
+<p><strong>Q70.</strong> Which test layer gives the best confidence per test for an API?</p>
+<p><strong>Answer:</strong> Integration tests through HTTP, covering routing, validation, middleware, SQL and serialization together</p>
+<p>Keep unit tests for logic with many edge cases.</p>
+<p><strong>Q71.</strong> In the retry test where the function fails twice then succeeds, how many calls are made?</p>
+<p><strong>Answer:</strong> 3</p>
+<p>callCount() is 3 and the result is 'finally'.</p>
+<p><strong>Q72.</strong> What does assert.rejects check?</p>
+<p><strong>Answer:</strong> That an async function rejects with the expected error</p>
+<p>The give-up test expects the last error to be rethrown.</p>
+<h3 id="09-structured-logging-with-pino"><a href="../level-2/09-logging/">09 · Structured Logging with Pino</a><a class="headerlink" href="#09-structured-logging-with-pino" title="Permanent link">&para;</a></h3>
+<p><strong>Q73.</strong> Why use structured JSON logs rather than console.log strings in production?</p>
+<p><strong>Answer:</strong> Machines can filter and aggregate fields, e.g. every error for request b7e1c2</p>
+<p>One JSON object per line with consistent fields.</p>
+<p><strong>Q74.</strong> What is the Pino call signature?</p>
+<p><strong>Answer:</strong> logger.level(mergingObject, message), with data in the object and a constant message</p>
+<p>A constant message ('order placed') lets you count occurrences, while orderId stays queryable.</p>
+<p><strong>Q75.</strong> What does the redact option do?</p>
+<p><strong>Answer:</strong> Replaces sensitive paths such as *.password with [redacted] in log output</p>
+<p>The example censors req.headers.authorization, *.password and card.number.</p>
+<p><strong>Q76.</strong> At level 'info', what happens to logger.debug(...)?</p>
+<p><strong>Answer:</strong> It's dropped; levels are numbers (debug 20, info 30)</p>
+<p>trace 10, debug 20, info 30, warn 40, error 50, fatal 60.</p>
+<h3 id="10-project-a-rest-api-with-auth"><a href="../level-2/10-project-rest-api-auth/">10 · Project — A REST API with Auth</a><a class="headerlink" href="#10-project-a-rest-api-with-auth" title="Permanent link">&para;</a></h3>
+<p><strong>Q77.</strong> What should the API return when a user requests another user's task?</p>
+<p><strong>Answer:</strong> 404, not 403, so it doesn't reveal that the task exists</p>
+<p>Users can never read or modify another user's tasks.</p>
+<p><strong>Q78.</strong> What are the project's lifetime and format for access tokens?</p>
+<p><strong>Answer:</strong> A JWT access token valid for 15 minutes, sent as Authorization: Bearer &lt;token&gt;</p>
+<p>Registration and login return it.</p>
+<p><strong>Q79.</strong> Which status codes does the project use for validation errors, duplicates and unknown routes?</p>
+<p><strong>Answer:</strong> 400 with per-field details, 409, and a JSON 404</p>
+<p>Bugs return a 500 without internals.</p>
+<p><strong>Q80.</strong> How does the test suite run against a real Postgres engine without a server?</p>
+<p><strong>Answer:</strong> PGlite via a test-only in-process pool adapter</p>
+<p>It's driven with Supertest.</p>
+<h2 id="level-3-advanced">Level 3 · Advanced<a class="headerlink" href="#level-3-advanced" title="Permanent link">&para;</a></h2>
+<h3 id="01-the-event-loop-in-depth"><a href="../level-3/01-event-loop-deep-dive/">01 · The Event Loop in Depth</a><a class="headerlink" href="#01-the-event-loop-in-depth" title="Permanent link">&para;</a></h3>
+<p><strong>Q81.</strong> Which two queues are drained after every single callback, in every phase?</p>
+<p><strong>Answer:</strong> The process.nextTick queue, then the microtask queue</p>
+<p>The loop advances only when both are empty.</p>
+<p><strong>Q82.</strong> Inside an I/O (fs) callback, which runs first: setImmediate or setTimeout(fn, 0)?</p>
+<p><strong>Answer:</strong> setImmediate, because the check phase follows the poll phase</p>
+<p>Verified: 'immediate inside I/O' printed before 'timeout inside I/O'. From the main module their order can vary.</p>
+<p><strong>Q83.</strong> Why could a recursive process.nextTick freeze a server?</p>
+<p><strong>Answer:</strong> The nextTick queue is drained completely before the loop proceeds, so it starves I/O</p>
+<p>The same applies to microtasks queuing microtasks.</p>
+<p><strong>Q84.</strong> In which phase do setImmediate callbacks run?</p>
+<p><strong>Answer:</strong> Check, right after poll</p>
+<p>Timers handle setTimeout and setInterval; poll waits for I/O.</p>
+<h3 id="02-streams-backpressure"><a href="../level-3/02-streams-backpressure/">02 · Streams &amp; Backpressure</a><a class="headerlink" href="#02-streams-backpressure" title="Permanent link">&para;</a></h3>
+<p><strong>Q85.</strong> What does write() returning false mean?</p>
+<p><strong>Answer:</strong> The internal buffer is full; stop until the 'drain' event</p>
+<p>It's advisory: nothing forces you to stop, but ignoring it piles data up in memory.</p>
+<p><strong>Q86.</strong> What does highWaterMark control?</p>
+<p><strong>Answer:</strong> How many bytes can be buffered before write() returns false</p>
+<p>It bounds memory regardless of how slow the consumer is.</p>
+<p><strong>Q87.</strong> Which stream type is zlib.createGzip()?</p>
+<p><strong>Answer:</strong> Transform</p>
+<p>Transform streams derive output from input; Duplex has independent sides, like a TCP socket.</p>
+<p><strong>Q88.</strong> What helper handles backpressure for you so you rarely write the drain loop by hand?</p>
+<p><strong>Answer:</strong> pipeline</p>
+<p>The hand-written loop shows how it works.</p>
+<h3 id="03-buffers-binary-data"><a href="../level-3/03-buffers/">03 · Buffers &amp; Binary Data</a><a class="headerlink" href="#03-buffers-binary-data" title="Permanent link">&para;</a></h3>
+<p><strong>Q89.</strong> Buffer.from('héllo €', 'utf8') has what length versus the string's length?</p>
+<p><strong>Answer:</strong> 10 bytes versus 7 characters</p>
+<p>é is 2 bytes and € is 3 bytes. Use Buffer.byteLength(str) for Content-Length, never str.length.</p>
+<p><strong>Q90.</strong> Does Buffer.subarray copy memory?</p>
+<p><strong>Answer:</strong> No: it shares memory, so changing the view changes the original</p>
+<p>Buffer.from(buffer) makes an independent copy.</p>
+<p><strong>Q91.</strong> What goes wrong when a chunk boundary falls inside the multi-byte character €?</p>
+<p><strong>Answer:</strong> toString() on each chunk yields replacement characters; StringDecoder holds back incomplete sequences</p>
+<p>setEncoding('utf8') on a stream does this internally.</p>
+<p><strong>Q92.</strong> What is base64url used for?</p>
+<p><strong>Answer:</strong> URL-safe base64 without padding, as in JWTs</p>
+<p>Buffer is a subclass of Uint8Array.</p>
+<h3 id="04-worker-threads-child-processes"><a href="../level-3/04-worker-threads-child-processes/">04 · Worker Threads &amp; Child Processes</a><a class="headerlink" href="#04-worker-threads-child-processes" title="Permanent link">&para;</a></h3>
+<p><strong>Q93.</strong> When do you use worker_threads versus child_process?</p>
+<p><strong>Answer:</strong> worker_threads for CPU-bound JavaScript in the same process; child_process for external programs or strong isolation</p>
+<p>Each worker has its own V8 isolate and event loop.</p>
+<p><strong>Q94.</strong> Why does heavy computation on the main thread hurt a server?</p>
+<p><strong>Answer:</strong> It blocks the event loop, so every other request waits</p>
+<p>The lesson's heartbeat counter shows the main thread stalling.</p>
+<p><strong>Q95.</strong> How do the main thread and a worker communicate?</p>
+<p><strong>Answer:</strong> By messages: parentPort.on('message') and postMessage</p>
+<p>The worker posts { id, result } back.</p>
+<p><strong>Q96.</strong> What do four workers running four jobs achieve?</p>
+<p><strong>Answer:</strong> True parallelism across CPU cores while the main thread stays free</p>
+<p>The comparison measured heartbeats during each run.</p>
+<h3 id="05-clustering-using-every-core"><a href="../level-3/05-clustering/">05 · Clustering &amp; Using Every Core</a><a class="headerlink" href="#05-clustering-using-every-core" title="Permanent link">&para;</a></h3>
+<p><strong>Q97.</strong> Why run several copies of a Node process?</p>
+<p><strong>Answer:</strong> One process uses one core, so an 8-core server stays mostly idle once request handling is the bottleneck</p>
+<p>Two ways: node:cluster, or N replicas behind a load balancer as containers and Kubernetes do.</p>
+<p><strong>Q98.</strong> How are requests distributed in the lesson's three-worker demo?</p>
+<p><strong>Answer:</strong> Round-robin across workers, and the primary replaces a worker that dies</p>
+<p>The port stays open throughout because the primary owns it.</p>
+<p><strong>Q99.</strong> What does clustering not give you?</p>
+<p><strong>Answer:</strong> Shared memory: each worker has its own heap, so in-memory caches, rate-limit counters and sessions exist per worker</p>
+<p>Use Redis or another shared store.</p>
+<p><strong>Q100.</strong> What does worker.disconnect() on SIGTERM do?</p>
+<p><strong>Answer:</strong> Lets workers finish in-flight requests, then exit</p>
+<p>exitedAfterDisconnect tells the primary it was intentional, so it doesn't fork a replacement.</p>
+<h3 id="06-caching-with-redis"><a href="../level-3/06-caching-redis/">06 · Caching with Redis</a><a class="headerlink" href="#06-caching-with-redis" title="Permanent link">&para;</a></h3>
+<p><strong>Q101.</strong> What is the cache-aside pattern?</p>
+<p><strong>Answer:</strong> On read, try the cache, load from the database on a miss and store with a TTL; on write, update the database and delete the cache key</p>
+<p>Deleting is safer than updating the cached value.</p>
+<p><strong>Q102.</strong> What is the downside of in-process caches compared with Redis?</p>
+<p><strong>Answer:</strong> Each process has its own copy, it's lost on restart, and it competes with your heap</p>
+<p>Redis is shared by all processes and survives app restarts.</p>
+<p><strong>Q103.</strong> Why must the node-redis client have an 'error' listener?</p>
+<p><strong>Answer:</strong> It's an EventEmitter, and an unhandled 'error' would crash the process on a Redis blip</p>
+<p>The client reconnects automatically.</p>
+<p><strong>Q104.</strong> What does the lesson say about the Redis calls it shows?</p>
+<p><strong>Answer:</strong> They were checked against the package's type definitions but not run; the cache logic was run against an in-memory stand-in</p>
+<p>The lesson is honest about what was verified.</p>
+<h3 id="07-websockets"><a href="../level-3/07-websockets/">07 · WebSockets</a><a class="headerlink" href="#07-websockets" title="Permanent link">&para;</a></h3>
+<p><strong>Q105.</strong> What do WebSockets provide beyond HTTP?</p>
+<p><strong>Answer:</strong> A long-lived full-duplex connection where either side can send at any time</p>
+<p>Useful for chat, live dashboards and multiplayer games.</p>
+<p><strong>Q106.</strong> When is Server-Sent Events (SSE) enough?</p>
+<p><strong>Answer:</strong> For one-way server-to-client streams like notifications and dashboards, with browser auto-reconnect</p>
+<p>It's a plain HTTP response that stays open.</p>
+<p><strong>Q107.</strong> What does the heartbeat with ping and terminate do?</p>
+<p><strong>Answer:</strong> Detects and terminates connections that stop answering (dead NAT paths, sleeping laptops)</p>
+<p>A socket is marked not alive until it answers pong.</p>
+<p><strong>Q108.</strong> Why does the server set maxPayload and close with 1007 for invalid JSON?</p>
+<p><strong>Answer:</strong> To bound memory per message and reject malformed input</p>
+<p>Binary frames are closed with 1003 'text only'.</p>
+<h3 id="08-file-uploads"><a href="../level-3/08-file-uploads/">08 · File Uploads</a><a class="headerlink" href="#08-file-uploads" title="Permanent link">&para;</a></h3>
+<p><strong>Q109.</strong> Why not use the client's filename on disk?</p>
+<p><strong>Answer:</strong> It may be something like ../../app/server.js; generate your own name (e.g. randomUUID)</p>
+<p>The diskStorage filename callback returns randomUUID().</p>
+<p><strong>Q110.</strong> How should you check an uploaded file's type?</p>
+<p><strong>Answer:</strong> Check the actual bytes (magic-number signatures), not the client-supplied mimetype or extension</p>
+<p>For example PNG starts with 89 50 4e 47 and JPEG with ff d8 ff.</p>
+<p><strong>Q111.</strong> Why doesn't express.json() work for file uploads?</p>
+<p><strong>Answer:</strong> Multipart bodies need a streaming multipart parser such as multer (built on busboy)</p>
+<p>The body has parts separated by a boundary string.</p>
+<p><strong>Q112.</strong> Which limits does the example set?</p>
+<p><strong>Answer:</strong> fileSize 2 MB, one file and five fields</p>
+<p>Limits prevent enormous uploads; production systems often upload directly to object storage.</p>
+<h3 id="09-security-for-node-services"><a href="../level-3/09-security/">09 · Security for Node Services</a><a class="headerlink" href="#09-security-for-node-services" title="Permanent link">&para;</a></h3>
+<p><strong>Q113.</strong> What is broken access control in a Node API?</p>
+<p><strong>Answer:</strong> GET /tasks/:id returning any user's task; defend by scoping every query by owner</p>
+<p>It's the first OWASP category.</p>
+<p><strong>Q114.</strong> What does helmet() do?</p>
+<p><strong>Answer:</strong> Sets security headers such as content-security-policy and x-content-type-options</p>
+<p>The lesson checks that the headers appear on a response.</p>
+<p><strong>Q115.</strong> What does rateLimit({ windowMs: 60_000, limit: 5 }) on /auth/login do?</p>
+<p><strong>Answer:</strong> Allows 5 requests per minute per client, slowing credential guessing</p>
+<p>No rate limit on login is an 'insecure design' example.</p>
+<p><strong>Q116.</strong> How do you defend against SSRF, where the server fetches a user-supplied URL?</p>
+<p><strong>Answer:</strong> URL allowlists</p>
+<p>Also use execFile rather than exec for injection defense.</p>
+<h3 id="10-project-a-real-time-chat-app"><a href="../level-3/10-project-realtime-app/">10 · Project — A Real-Time Chat App</a><a class="headerlink" href="#10-project-a-real-time-chat-app" title="Permanent link">&para;</a></h3>
+<p><strong>Q117.</strong> How does the chat server authenticate connections?</p>
+<p><strong>Answer:</strong> During the upgrade, with a signed expiring token and an Origin check</p>
+<p>Tokens are short-lived and issued by the Express app.</p>
+<p><strong>Q118.</strong> How are client messages validated?</p>
+<p><strong>Answer:</strong> With a Zod discriminated union keyed by type (join, leave, say, typing)</p>
+<p>Anything else is rejected before it reaches the room logic.</p>
+<p><strong>Q119.</strong> What protects against slow consumers?</p>
+<p><strong>Answer:</strong> Checking bufferedAmount (streams and backpressure)</p>
+<p>Each connection also has a token-bucket rate limit.</p>
+<p><strong>Q120.</strong> Why does the Rooms state need pub/sub to scale out?</p>
+<p><strong>Answer:</strong> It's in-memory for one process, so other processes wouldn't see it</p>
+<p>Graceful shutdown uses close code 1001.</p>
+<h2 id="level-4-master">Level 4 · Master<a class="headerlink" href="#level-4-master" title="Permanent link">&para;</a></h2>
+<h3 id="01-performance-profiling-memory-leaks"><a href="../level-4/01-profiling-memory-leaks/">01 · Performance Profiling &amp; Memory Leaks</a><a class="headerlink" href="#01-performance-profiling-memory-leaks" title="Permanent link">&para;</a></h3>
+<p><strong>Q121.</strong> What is the most time-saving rule of performance work?</p>
+<p><strong>Answer:</strong> Profile before optimizing; the slow part is rarely where you expect</p>
+<p>Guessing at causes wastes days.</p>
+<p><strong>Q122.</strong> How does V8's sampling CPU profiler work?</p>
+<p><strong>Answer:</strong> Roughly every millisecond it records the current JavaScript call stack; functions in many samples are where CPU time goes</p>
+<p>Collect with node --cpu-prof, or --inspect with Chrome DevTools.</p>
+<p><strong>Q123.</strong> What does <code>node --cpu-prof</code> write?</p>
+<p><strong>Answer:</strong> A .cpuprofile file when the process exits</p>
+<p>It's JSON, viewable as a flame chart in DevTools.</p>
+<p><strong>Q124.</strong> What were the two hidden inefficiencies in buildReport?</p>
+<p><strong>Answer:</strong> Re-sorting the whole array for every order, and JSON round-trips to copy objects</p>
+<p>The report of 3000 orders took about 910 ms.</p>
+<h3 id="02-diagnostics-in-production"><a href="../level-4/02-diagnostics/">02 · Diagnostics in Production</a><a class="headerlink" href="#02-diagnostics-in-production" title="Permanent link">&para;</a></h3>
+<p><strong>Q125.</strong> What is a Node diagnostic report?</p>
+<p><strong>Answer:</strong> A JSON snapshot of the process: versions, stacks, heap stats, resource usage and every libuv handle</p>
+<p>process.report.getReport() generates one on demand.</p>
+<p><strong>Q126.</strong> How do you get a report from a hung process without killing it?</p>
+<p><strong>Answer:</strong> Run with --report-on-signal and send SIGUSR2: kill -USR2 &lt;pid&gt;</p>
+<p>The libuv section then shows open sockets and timers.</p>
+<p><strong>Q127.</strong> What did the lesson find when --report-directory pointed to a missing directory?</p>
+<p><strong>Answer:</strong> Node printed 'Failed to open Node.js report file' and wrote nothing</p>
+<p>The directory must already exist.</p>
+<p><strong>Q128.</strong> Why treat diagnostic reports as sensitive?</p>
+<p><strong>Answer:</strong> They contain environment variables, potentially secrets</p>
+<p>Newer versions can exclude them with --report-exclude-env.</p>
+<h3 id="03-typescript-for-node"><a href="../level-4/03-typescript-for-node/">03 · TypeScript for Node</a><a class="headerlink" href="#03-typescript-for-node" title="Permanent link">&para;</a></h3>
+<p><strong>Q129.</strong> What two separate jobs does TypeScript tooling do?</p>
+<p><strong>Answer:</strong> Type checking (tsc) and producing runnable JavaScript (removing annotations)</p>
+<p>Current Node can strip types itself when you run node file.ts; type checking remains tsc's job.</p>
+<p><strong>Q130.</strong> Why must imports use './money.ts' with the extension when running .ts directly?</p>
+<p><strong>Answer:</strong> Node resolves the file exactly as written (ESM rules)</p>
+<p>The type modifier (import { type Money }) marks an import as erased at runtime.</p>
+<p><strong>Q131.</strong> What does <code>node src/main.ts</code> print for add($19.99, $5.00) in the lesson?</p>
+<p><strong>Answer:</strong> $24.99</p>
+<p>Amounts are integer minor units: 1999 + 500 = 2499 cents.</p>
+<p><strong>Q132.</strong> Why store money as integer minor units?</p>
+<p><strong>Answer:</strong> To avoid floating-point errors with currency</p>
+<p>The format function divides by 100 for display.</p>
+<h3 id="04-architecture-layered-hexagonal"><a href="../level-4/04-architecture/">04 · Architecture: Layered &amp; Hexagonal</a><a class="headerlink" href="#04-architecture-layered-hexagonal" title="Permanent link">&para;</a></h3>
+<p><strong>Q133.</strong> In the layered architecture, what belongs in route handlers?</p>
+<p><strong>Answer:</strong> HTTP translation only: parse and validate input, call a service, shape the response</p>
+<p>Services hold business rules with no req/res; repositories hold data access.</p>
+<p><strong>Q134.</strong> Why should services take plain arguments and return plain values?</p>
+<p><strong>Answer:</strong> So a CLI, a queue worker or a test can call them too</p>
+<p>They contain no req or res.</p>
+<p><strong>Q135.</strong> In hexagonal architecture, who defines ports and who implements them?</p>
+<p><strong>Answer:</strong> The core defines ports (interfaces it needs); adapters implement them</p>
+<p>Dependency arrows all point inward.</p>
+<p><strong>Q136.</strong> What does this make easier?</p>
+<p><strong>Answer:</strong> Testing the core with in-memory adapters, and swapping infrastructure</p>
+<p>The core imports nothing from Express, Kysely or an SDK.</p>
+<h3 id="05-queues-background-jobs"><a href="../level-4/05-queues-background-jobs/">05 · Queues &amp; Background Jobs</a><a class="headerlink" href="#05-queues-background-jobs" title="Permanent link">&para;</a></h3>
+<p><strong>Q137.</strong> Why move slow work (emails, PDFs, image resizing) out of the request?</p>
+<p><strong>Answer:</strong> Doing it inline slows responses, ties latency to third-party reliability, and loses work on a restart</p>
+<p>The request enqueues a job and returns, often 202 Accepted.</p>
+<p><strong>Q138.</strong> What does FOR UPDATE SKIP LOCKED do in the Postgres queue?</p>
+<p><strong>Answer:</strong> Lets multiple workers claim different jobs without waiting on rows another worker has locked</p>
+<p>pg-boss and Graphile Worker build on the same technique.</p>
+<p><strong>Q139.</strong> Which is the most widely used Node job library on Redis?</p>
+<p><strong>Answer:</strong> BullMQ</p>
+<p>It offers delays, retries, priorities, rate limits and repeatable jobs.</p>
+<p><strong>Q140.</strong> What happens to a job that keeps failing past max_attempts?</p>
+<p><strong>Answer:</strong> It ends in a 'dead' status for inspection</p>
+<p>Statuses: queued, running, done, dead.</p>
+<h3 id="06-microservices-communication"><a href="../level-4/06-microservices-communication/">06 · Microservices Communication</a><a class="headerlink" href="#06-microservices-communication" title="Permanent link">&para;</a></h3>
+<p><strong>Q141.</strong> What must every service-to-service HTTP call have?</p>
+<p><strong>Answer:</strong> A timeout, so a hung dependency doesn't hang you</p>
+<p>Also bounded retries with exponential backoff and jitter, a circuit breaker and propagated request ids.</p>
+<p><strong>Q142.</strong> What does the lesson's circuit breaker do after <code>threshold</code> consecutive failures?</p>
+<p><strong>Answer:</strong> Fails fast for coolDownMs, then allows one trial request (half-open)</p>
+<p>It stops a dead dependency from consuming resources.</p>
+<p><strong>Q143.</strong> Which statuses are treated as retryable?</p>
+<p><strong>Answer:</strong> 502, 503 and 504 (transient failures)</p>
+<p>Only transient failures should be retried.</p>
+<p><strong>Q144.</strong> What does the lesson caution about microservices?</p>
+<p><strong>Answer:</strong> Many teams are better served by a modular monolith until organisational or scaling pressure justifies splitting</p>
+<p>Every in-process call becomes a network call that can be slow or fail.</p>
+<h3 id="07-containerizing-deploying"><a href="../level-4/07-containerize-deploy/">07 · Containerizing &amp; Deploying</a><a class="headerlink" href="#07-containerizing-deploying" title="Permanent link">&para;</a></h3>
+<p><strong>Q145.</strong> Why copy package manifests before the source in a Dockerfile?</p>
+<p><strong>Answer:</strong> So the npm ci layer is cached and only re-runs when dependencies change</p>
+<p>npm ci --omit=dev installs exactly the lockfile without test tools.</p>
+<p><strong>Q146.</strong> Why USER node?</p>
+<p><strong>Answer:</strong> A compromised process shouldn't be root inside the container</p>
+<p>Official images include an unprivileged node user.</p>
+<p><strong>Q147.</strong> What does the lesson honestly say about its Dockerfile?</p>
+<p><strong>Answer:</strong> It was written for Docker but not built or run, because the authoring machine had no container runtime</p>
+<p>Build it yourself and fix anything your environment disagrees with.</p>
+<p><strong>Q148.</strong> How do -slim and -alpine images differ?</p>
+<p><strong>Answer:</strong> -slim is Debian-based without compilers; -alpine is smaller but uses musl libc, which some native modules don't support well</p>
+<p>Distroless images are smaller still, with no shell.</p>
+<h3 id="08-observability-with-opentelemetry"><a href="../level-4/08-observability/">08 · Observability with OpenTelemetry</a><a class="headerlink" href="#08-observability-with-opentelemetry" title="Permanent link">&para;</a></h3>
+<p><strong>Q149.</strong> What is the difference between monitoring and observability?</p>
+<p><strong>Answer:</strong> Monitoring tells you that something is wrong; observability lets you ask why without shipping new code</p>
+<p>It rests on logs, metrics and traces.</p>
+<p><strong>Q150.</strong> What do traces show?</p>
+<p><strong>Answer:</strong> The path of one request through services as a tree of timed spans</p>
+<p>They answer 'which of the 14 calls behind this slow request was slow?'.</p>
+<p><strong>Q151.</strong> What is OpenTelemetry?</p>
+<p><strong>Answer:</strong> A vendor-neutral standard for producing logs, metrics and traces, exported over OTLP to a collector</p>
+<p>Route data to Jaeger, Grafana, Honeycomb, Datadog and so on.</p>
+<p><strong>Q152.</strong> Why does instrumentation live in its own file loaded with --import?</p>
+<p><strong>Answer:</strong> It must load before the app imports the modules it patches, and ESM needs a loader hook via register()</p>
+<p>For CommonJS require it's easy to intercept; ESM needs the hook.</p>
+<h3 id="09-graceful-shutdown-reliability"><a href="../level-4/09-graceful-shutdown-reliability/">09 · Graceful Shutdown &amp; Reliability</a><a class="headerlink" href="#09-graceful-shutdown-reliability" title="Permanent link">&para;</a></h3>
+<p><strong>Q153.</strong> What does a platform send when it stops an instance, and what can't be caught?</p>
+<p><strong>Answer:</strong> SIGTERM, then after a grace period SIGKILL, which can't be caught</p>
+<p>A good service finishes within the grace period.</p>
+<p><strong>Q154.</strong> What is the first step of the shutdown sequence?</p>
+<p><strong>Answer:</strong> Stop being ready (e.g. /readyz returns 503) so the load balancer stops sending new requests</p>
+<p>Then server.close(), finish in-flight work, close idle keep-alives, close resources in order, and exit.</p>
+<p><strong>Q155.</strong> Why set a hard deadline timer with unref()?</p>
+<p><strong>Answer:</strong> So the process never hangs forever, without keeping the event loop alive on its own</p>
+<p>Keep it below the platform's kill timeout.</p>
+<p><strong>Q156.</strong> In what order should resources close?</p>
+<p><strong>Answer:</strong> In order, such as DB pools, Redis, message consumers, then telemetry exporters (to flush buffered spans and logs)</p>
+<p>The example uses a db.end() step.</p>
+<h3 id="10-capstone-a-production-ready-service"><a href="../level-4/10-capstone/">10 · Capstone — A Production-Ready Service</a><a class="headerlink" href="#10-capstone-a-production-ready-service" title="Permanent link">&para;</a></h3>
+<p><strong>Q157.</strong> Which key constraint does the Bookings capstone highlight?</p>
+<p><strong>Answer:</strong> Two overlapping bookings for the same resource must be impossible, even under concurrent requests</p>
+<p>Constraints in the database enforce invariants.</p>
+<p><strong>Q158.</strong> When should the confirmation email job be enqueued?</p>
+<p><strong>Answer:</strong> When a booking is created, in the same transaction</p>
+<p>A reminder job runs 30 minutes before the start.</p>
+<p><strong>Q159.</strong> How should the utilization report be computed?</p>
+<p><strong>Answer:</strong> Without blocking the event loop, whatever the date range</p>
+<p>It draws on worker threads and streaming ideas from Level 3.</p>
+<p><strong>Q160.</strong> What shape should the domain and use cases have?</p>
+<p><strong>Answer:</strong> Independent of Express and the DB, with a composition root</p>
+<p>The non-functional table also requires TypeScript strict, Zod at boundaries and one error format.</p>
+<h2 id="mixed-questions-across-all-levels">Mixed questions across all levels<a class="headerlink" href="#mixed-questions-across-all-levels" title="Permanent link">&para;</a></h2>
+<p><strong>Q161.</strong> What is printed?</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">EventEmitter</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">'node:events'</span>
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">e</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">EventEmitter</span><span class="p">()</span>
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="nx">e</span><span class="p">.</span><span class="nx">on</span><span class="p">(</span><span class="s1">'x'</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'A'</span><span class="p">))</span>
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="nx">e</span><span class="p">.</span><span class="nx">once</span><span class="p">(</span><span class="s1">'x'</span><span class="p">,</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'B'</span><span class="p">))</span>
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'start'</span><span class="p">)</span>
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">emit</span><span class="p">(</span><span class="s1">'x'</span><span class="p">))</span>
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">emit</span><span class="p">(</span><span class="s1">'x'</span><span class="p">))</span>
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">emit</span><span class="p">(</span><span class="s1">'nobody'</span><span class="p">),</span><span class="w"> </span><span class="nx">e</span><span class="p">.</span><span class="nx">listenerCount</span><span class="p">(</span><span class="s1">'x'</span><span class="p">))</span>
+</code></pre></div>
+<p><strong>Answer:</strong> start, A, B, true, A, true, false 1 (one per line)</p>
+<p>emit is synchronous, so listeners run before emit returns true. The once listener is removed after the first call. emit returns false with no listeners, and one listener remains.</p>
+<p><strong>Q162.</strong> What does this print?</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">Buffer</span><span class="p">.</span><span class="kr">from</span><span class="p">(</span><span class="s1">'héllo €'</span><span class="p">).</span><span class="nx">length</span><span class="p">,</span><span class="w"> </span><span class="s1">'héllo €'</span><span class="p">.</span><span class="nx">length</span><span class="p">,</span><span class="w"> </span><span class="nx">Buffer</span><span class="p">.</span><span class="nx">byteLength</span><span class="p">(</span><span class="s1">'€'</span><span class="p">))</span>
+</code></pre></div>
+<p><strong>Answer:</strong> 10 7 3</p>
+<p>In UTF-8, é takes 2 bytes and € takes 3, so the string has 7 characters but 10 bytes.</p>
+<p><strong>Q163.</strong> What is printed?</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">b</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Buffer</span><span class="p">.</span><span class="kr">from</span><span class="p">(</span><span class="s1">'abcdef'</span><span class="p">)</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="kd">const</span><span class="w"> </span><span class="nx">v</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">b</span><span class="p">.</span><span class="nx">subarray</span><span class="p">(</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">3</span><span class="p">);</span><span class="w"> </span><span class="nx">v</span><span class="p">[</span><span class="mf">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x5a</span>
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">b</span><span class="p">.</span><span class="nx">toString</span><span class="p">())</span>
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="kd">const</span><span class="w"> </span><span class="nx">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">Buffer</span><span class="p">.</span><span class="kr">from</span><span class="p">(</span><span class="nx">b</span><span class="p">);</span><span class="w"> </span><span class="nx">c</span><span class="p">[</span><span class="mf">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0x71</span>
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">b</span><span class="p">.</span><span class="nx">toString</span><span class="p">(),</span><span class="w"> </span><span class="nx">c</span><span class="p">.</span><span class="nx">toString</span><span class="p">())</span>
+</code></pre></div>
+<p><strong>Answer:</strong> Zbcdef, then Zbcdef qbcdef</p>
+<p>subarray shares memory with the original, but Buffer.from(buffer) makes an independent copy.</p>
+<p><strong>Q164.</strong> What does this print?</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">N</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">5</span>
+<a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="ow">typeof</span><span class="w"> </span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">N</span><span class="p">,</span><span class="w"> </span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">N</span><span class="p">,</span><span class="w"> </span><span class="nx">process</span><span class="p">.</span><span class="nx">env</span><span class="p">.</span><span class="nx">NOPE</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Answer:</strong> string 5 undefined</p>
+<p>Values in process.env are always strings (or undefined when missing).</p>
+<p><strong>Q165.</strong> In what order are these lines printed?</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">async</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="nx">f</span><span class="p">()</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'f1'</span><span class="p">);</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="kc">null</span><span class="p">;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'f2'</span><span class="p">)</span><span class="w"> </span><span class="p">}</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nx">f</span><span class="p">()</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="nb">Promise</span><span class="p">.</span><span class="nx">resolve</span><span class="p">().</span><span class="nx">then</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'p1'</span><span class="p">))</span>
+<a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'sync'</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Answer:</strong> f1, sync, f2, p1</p>
+<p>f runs synchronously up to its first await; the continuation is queued as a microtask before the .then callback, so f2 prints before p1.</p>
+<p><strong>Q166.</strong> What is printed?</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">r</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nb">Promise</span><span class="p">.</span><span class="nx">allSettled</span><span class="p">([</span><span class="nb">Promise</span><span class="p">.</span><span class="nx">resolve</span><span class="p">(</span><span class="mf">1</span><span class="p">),</span><span class="w"> </span><span class="nb">Promise</span><span class="p">.</span><span class="nx">reject</span><span class="p">(</span><span class="ow">new</span><span class="w"> </span><span class="ne">Error</span><span class="p">(</span><span class="s1">'no'</span><span class="p">)),</span><span class="w"> </span><span class="mf">3</span><span class="p">])</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">r</span><span class="p">.</span><span class="nx">map</span><span class="p">(</span><span class="nx">x</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">x</span><span class="p">.</span><span class="nx">status</span><span class="p">).</span><span class="nx">join</span><span class="p">(</span><span class="s1">','</span><span class="p">))</span>
+</code></pre></div>
+<p><strong>Answer:</strong> fulfilled,rejected,fulfilled</p>
+<p>allSettled never rejects: it reports each outcome. Promise.all would reject on the first failure.</p>
+<p><strong>Q167.</strong> What does this print?</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">path</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s1">'/srv/app'</span><span class="p">,</span><span class="w"> </span><span class="s1">'uploads'</span><span class="p">,</span><span class="w"> </span><span class="s1">'../logs'</span><span class="p">,</span><span class="w"> </span><span class="s1">'app.log'</span><span class="p">),</span><span class="w"> </span><span class="nx">path</span><span class="p">.</span><span class="nx">basename</span><span class="p">(</span><span class="s1">'/a/b/c.txt'</span><span class="p">,</span><span class="w"> </span><span class="s1">'.txt'</span><span class="p">),</span><span class="w"> </span><span class="nx">path</span><span class="p">.</span><span class="nx">extname</span><span class="p">(</span><span class="s1">'x.tar.gz'</span><span class="p">))</span>
+</code></pre></div>
+<p><strong>Answer:</strong> /srv/app/logs/app.log c .gz</p>
+<p>path.join normalises '..', basename strips the given extension, and extname returns only the last extension.</p>
+<p><strong>Q168.</strong> What does this print?</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">u</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">URL</span><span class="p">(</span><span class="s1">'/notes?q=Tea&amp;q=Milk&amp;limit=5'</span><span class="p">,</span><span class="w"> </span><span class="s1">'http://localhost'</span><span class="p">)</span>
+<a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">u</span><span class="p">.</span><span class="nx">pathname</span><span class="p">,</span><span class="w"> </span><span class="nx">u</span><span class="p">.</span><span class="nx">searchParams</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">'q'</span><span class="p">),</span><span class="w"> </span><span class="nx">u</span><span class="p">.</span><span class="nx">searchParams</span><span class="p">.</span><span class="nx">getAll</span><span class="p">(</span><span class="s1">'q'</span><span class="p">).</span><span class="nx">length</span><span class="p">,</span><span class="w"> </span><span class="nb">Number</span><span class="p">(</span><span class="nx">u</span><span class="p">.</span><span class="nx">searchParams</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="s1">'limit'</span><span class="p">))</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1</span><span class="p">)</span>
+</code></pre></div>
+<p><strong>Answer:</strong> /notes Tea 2 6</p>
+<p>get returns the first value, getAll returns all of them, and query values are strings, so limit needs Number().</p>
+<p><strong>Q169.</strong> Which of these does the range ^5.1.0 accept, and which does ^0.4.2 accept? (5.9.1, 6.0.0 against ^5.1.0; 0.4.9, 0.5.0 against ^0.4.2)</p>
+<p><strong>Answer:</strong> ^5.1.0: 5.9.1 yes, 6.0.0 no. ^0.4.2: 0.4.9 yes, 0.5.0 no</p>
+<p>Caret allows changes that don't bump the leftmost non-zero part, so for 0.x versions a minor bump may break.</p>
+<p><strong>Q170.</strong> What does this pipeline produce?</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">out</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[]</span>
+<a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a><span class="k">await</span><span class="w"> </span><span class="nx">pipeline</span><span class="p">(</span>
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a><span class="w">  </span><span class="nx">Readable</span><span class="p">.</span><span class="kr">from</span><span class="p">([</span><span class="s1">'a'</span><span class="p">,</span><span class="w"> </span><span class="s1">'b'</span><span class="p">,</span><span class="w"> </span><span class="s1">'c'</span><span class="p">]),</span>
+<a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a><span class="w">  </span><span class="ow">new</span><span class="w"> </span><span class="nx">Transform</span><span class="p">({</span><span class="w"> </span><span class="nx">transform</span><span class="p">(</span><span class="nx">ch</span><span class="p">,</span><span class="w"> </span><span class="nx">enc</span><span class="p">,</span><span class="w"> </span><span class="nx">cb</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">cb</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span><span class="w"> </span><span class="nx">ch</span><span class="p">.</span><span class="nx">toString</span><span class="p">().</span><span class="nx">toUpperCase</span><span class="p">())</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="p">}),</span>
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="w">  </span><span class="k">async</span><span class="w"> </span><span class="kd">function</span><span class="w"> </span><span class="p">(</span><span class="nx">src</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">for</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="p">(</span><span class="kd">const</span><span class="w"> </span><span class="nx">x</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="nx">src</span><span class="p">)</span><span class="w"> </span><span class="nx">out</span><span class="p">.</span><span class="nx">push</span><span class="p">(</span><span class="nx">x</span><span class="p">.</span><span class="nx">toString</span><span class="p">())</span><span class="w"> </span><span class="p">},</span>
+<a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a><span class="p">)</span>
+<a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">out</span><span class="p">.</span><span class="nx">join</span><span class="p">(</span><span class="s1">''</span><span class="p">))</span>
+</code></pre></div>
+<p><strong>Answer:</strong> ABC</p>
+<p>Transform maps each chunk to upper case; pipeline wires the streams and handles backpressure and errors.</p>
+<p><strong>Q171.</strong> A server hashes passwords with scrypt and a random salt per password. For the same password, are two stored hashes equal?</p>
+<p><strong>Answer:</strong> No: a different random salt gives a different hash, so compare with the stored salt and timingSafeEqual</p>
+<p>The same password and the same salt gives equal output (verified by running), but a fresh salt does not.</p>
+<p><strong>Q172.</strong> What delays does exponential backoff with base 100 ms give for four retries?</p>
+<p><strong>Answer:</strong> 100, 200, 400, 800 ms (plus jitter in production)</p>
+<p>base × 2^i. Add jitter so many clients don't retry at the same instant.</p>
+<p><strong>Q173.</strong> A circuit breaker has threshold 3. The calls fail, fail, fail, then succeed, succeed. What are the results?
+(breaker returns 'open' while failures ≥ threshold)</p>
+<p><strong>Answer:</strong> fail, fail, fail, open, open</p>
+<p>After three consecutive failures it fails fast until the cool-down, even though the dependency may have recovered (the simulated breaker has no cool-down here).</p>
+<p><strong>Q174.</strong> Why does a 500 ms CPU-bound loop make a 10 ms timer fire at about 500 ms?</p>
+<p><strong>Answer:</strong> Node runs JavaScript on one main thread, so the event loop can only check timers when the current code finishes</p>
+<p>Move CPU-heavy work to worker_threads.</p>
+<p><strong>Q175.</strong> Inside an fs callback, which runs first: setImmediate or setTimeout(fn, 0)?</p>
+<p><strong>Answer:</strong> setImmediate, because the check phase follows the poll phase</p>
+<p>Verified by running: 'immediate inside I/O' printed before 'timeout inside I/O'.</p>
+<p><strong>Q176.</strong> What should a service do on SIGTERM?</p>
+<p><strong>Answer:</strong> Report not ready, stop accepting connections, finish in-flight requests, close resources, then exit before SIGKILL</p>
+<p>SIGKILL can't be caught, so use a hard deadline timer.</p>
+<p><strong>Q177.</strong> Why should file uploads be sniffed by bytes and renamed on disk?</p>
+<p><strong>Answer:</strong> The client's mimetype, extension and filename can lie or contain ../ paths; use magic numbers and a generated name</p>
+<p>Also set size limits.</p>
+<p><strong>Q178.</strong> How does Express recognise an error-handling middleware, and where is it registered?</p>
+<p><strong>Answer:</strong> It takes four parameters (err, req, res, next) and is registered last</p>
+<p>Express 5 also forwards rejected promises from async handlers to it.</p>
+<p><strong>Q179.</strong> A user asks for GET /tasks/17 owned by someone else. What should the API return, and why?</p>
+<p><strong>Answer:</strong> 404, so it doesn't reveal that the task exists, with the query scoped by owner</p>
+<p>Scoping every query by the owner also prevents broken access control.</p>
+<p><strong>Q180.</strong> You run three cluster workers and keep a Map as a rate-limit counter in each. What goes wrong?</p>
+<p><strong>Answer:</strong> Each worker has its own heap, so counters aren't shared; use a shared store such as Redis</p>
+<p>Clustering doesn't give shared memory.</p>
+<h2 id="practical-coding-questions">Practical coding questions<a class="headerlink" href="#practical-coding-questions" title="Permanent link">&para;</a></h2>
+<h3 id="retry-with-exponential-backoff">Retry with exponential backoff<a class="headerlink" href="#retry-with-exponential-backoff" title="Permanent link">&para;</a></h3>
+<p>Write an async function retry(fn, { attempts, baseMs }) that calls fn(i). If it throws, wait baseMs * 2**i ms (not after the last attempt) and try again. After the last attempt rethrow the last error. Track the waits and print them for a function that fails twice and then succeeds.</p>
+<p>Starter code:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>import { setTimeout as sleep } from 'node:timers/promises'
+<a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>
+<a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>export async function retry(fn, { attempts = 3, baseMs = 10, onWait = () =&gt; {} } = {}) {
+<a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>  // your code
+<a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>}
+<a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>
+<a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>const waits = []
+<a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>let calls = 0
+<a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a>const result = await retry(async () =&gt; {
+<a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>  if (++calls &lt; 3) throw new Error('flaky')
+<a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a>  return 'finally'
+<a id="__codelineno-9-12" name="__codelineno-9-12" href="#__codelineno-9-12"></a>}, { attempts: 4, baseMs: 10, onWait: (ms) =&gt; waits.push(ms) })
+<a id="__codelineno-9-13" name="__codelineno-9-13" href="#__codelineno-9-13"></a>console.log(result, calls, waits.join(','))
+</code></pre></div>
+<p>Expected output:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>finally 3 10,20
+</code></pre></div>
+<p>??? success "Show a solution"</p>
+<div class="highlight"><pre><span></span><code>```
+import { setTimeout as sleep } from 'node:timers/promises'
+
+export async function retry(fn, { attempts = 3, baseMs = 10, onWait = () =&gt; {} } = {}) {
+  let lastErr
+  for (let i = 0; i &lt; attempts; i++) {
+    try {
+      return await fn(i)
+    } catch (err) {
+      lastErr = err
+      if (i &lt; attempts - 1) {
+        const ms = baseMs * 2 ** i
+        onWait(ms)
+        await sleep(ms)
+      }
+    }
+  }
+  throw lastErr
+}
+
+const waits = []
+let calls = 0
+const result = await retry(async () =&gt; {
+  if (++calls &lt; 3) throw new Error('flaky')
+  return 'finally'
+}, { attempts: 4, baseMs: 10, onWait: (ms) =&gt; waits.push(ms) })
+console.log(result, calls, waits.join(','))
+```
+
+Waits grow as base × 2^i, and the last attempt doesn't wait. Verified by running the solution in Node: output matches.
+</code></pre></div>
+<h3 id="parse-access-log-lines">Parse access-log lines<a class="headerlink" href="#parse-access-log-lines" title="Permanent link">&para;</a></h3>
+<p>Write parseLine(line) that matches the common log format and returns { method, path, status, bytes } or null for invalid lines. Then count requests by status class (2xx, 4xx…) for the sample lines.</p>
+<p>Starter code:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>const LINE = /^(\S+) \S+ \S+ \[([^\]]+)\] "(\S+) (\S+) [^"]*" (\d{3}) (\d+|-)/
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
+<a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>export function parseLine(line) {
+<a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>  // your code
+<a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>}
+<a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>
+<a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>const lines = [
+<a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>  '203.0.113.9 - - [10/Oct/2025:13:55:36 +0000] "GET /api/users HTTP/1.1" 200 512',
+<a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>  '203.0.113.9 - - [10/Oct/2025:13:55:37 +0000] "POST /api/login HTTP/1.1" 401 64',
+<a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>  'garbage line',
+<a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a>  '198.51.100.7 - - [10/Oct/2025:13:55:38 +0000] "GET /missing HTTP/1.1" 404 -',
+<a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a>]
+<a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a>const classes = {}
+<a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a>let invalid = 0
+<a id="__codelineno-12-15" name="__codelineno-12-15" href="#__codelineno-12-15"></a>for (const l of lines) {
+<a id="__codelineno-12-16" name="__codelineno-12-16" href="#__codelineno-12-16"></a>  const p = parseLine(l)
+<a id="__codelineno-12-17" name="__codelineno-12-17" href="#__codelineno-12-17"></a>  if (!p) { invalid++; continue }
+<a id="__codelineno-12-18" name="__codelineno-12-18" href="#__codelineno-12-18"></a>  const k = Math.floor(p.status / 100) + 'xx'
+<a id="__codelineno-12-19" name="__codelineno-12-19" href="#__codelineno-12-19"></a>  classes[k] = (classes[k] ?? 0) + 1
+<a id="__codelineno-12-20" name="__codelineno-12-20" href="#__codelineno-12-20"></a>}
+<a id="__codelineno-12-21" name="__codelineno-12-21" href="#__codelineno-12-21"></a>console.log(JSON.stringify(classes), 'invalid:', invalid)
+</code></pre></div>
+<p>Expected output:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>{"2xx":1,"4xx":2} invalid: 1
+</code></pre></div>
+<p>??? success "Show a solution"</p>
+<div class="highlight"><pre><span></span><code>```
+const LINE = /^(\S+) \S+ \S+ \[([^\]]+)\] "(\S+) (\S+) [^"]*" (\d{3}) (\d+|-)/
+
+export function parseLine(line) {
+  const m = LINE.exec(line)
+  if (!m) return null
+  return { method: m[3], path: m[4], status: Number(m[5]), bytes: m[6] === '-' ? 0 : Number(m[6]) }
+}
+
+const lines = [
+  '203.0.113.9 - - [10/Oct/2025:13:55:36 +0000] "GET /api/users HTTP/1.1" 200 512',
+  '203.0.113.9 - - [10/Oct/2025:13:55:37 +0000] "POST /api/login HTTP/1.1" 401 64',
+  'garbage line',
+  '198.51.100.7 - - [10/Oct/2025:13:55:38 +0000] "GET /missing HTTP/1.1" 404 -',
+]
+const classes = {}
+let invalid = 0
+for (const l of lines) {
+  const p = parseLine(l)
+  if (!p) { invalid++; continue }
+  const k = Math.floor(p.status / 100) + 'xx'
+  classes[k] = (classes[k] ?? 0) + 1
+}
+console.log(JSON.stringify(classes), 'invalid:', invalid)
+```
+
+Keeping the parser a pure function makes it easy to test. A '-' byte count becomes 0. Verified by running the solution in Node: output matches.
+</code></pre></div>
+<hr />
+<p>More free practice: the <a href="../">Node.js Mastery Path</a> curriculum, the <a href="https://learnmasterypath.com/interview-pack/">Interview Prep Pack</a> and the <a href="https://learnmasterypath.com/resume/">free resume ATS check</a>.</p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+  
+  <nav class="mp-related" aria-label="Related free courses">
+    <h2>Related free courses</h2>
+    <ul>
+      <li><a href="https://learnmasterypath.com/react-mastery-path/">React</a></li><li><a href="https://learnmasterypath.com/nextjs-mastery-path/">Next.js</a></li><li><a href="https://learnmasterypath.com/angular-mastery-path/">Angular</a></li><li><a href="https://learnmasterypath.com/vue-mastery-path/">Vue.js</a></li><li><a href="https://learnmasterypath.com/html-css-mastery-path/">HTML & CSS</a></li>
+      <li><a href="https://learnmasterypath.com/">All 100+ courses &rarr;</a></li>
+    </ul>
+  </nav>
+  
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Home
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../cheat-sheet/" class="md-footer__link md-footer__link--next" aria-label="Next: Cheat Sheet">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Cheat Sheet
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+  <div class="mp-foot">
+    <div class="mp-foot-inner">
+      <a class="mp-foot-brand" href="https://learnmasterypath.com/"><svg class="mp-mark" viewBox="0 0 160 160" role="img" aria-label="Mastery Path logo">
+  <circle cx="80" cy="80" r="74" fill="#FAF7EF" stroke="#2FA98D" stroke-width="5"/>
+  <rect class="mp-bar mp-bar-1" x="36" y="90" width="17" height="24" rx="5" fill="#2FA98D"/>
+  <rect class="mp-bar mp-bar-2" x="59" y="74" width="17" height="40" rx="5" fill="#7FC9B7"/>
+  <rect class="mp-bar mp-bar-3" x="82" y="56" width="17" height="58" rx="5" fill="#E0B457"/>
+  <rect class="mp-bar mp-bar-4" x="105" y="38" width="17" height="76" rx="5" fill="#C97B4A"/>
+  <circle class="mp-dot" cx="44.5" cy="82" r="7" fill="#22261f"/>
+</svg><span>Mastery Path</span></a>
+      <nav class="mp-sitelinks" aria-label="Site and legal links">
+        <a href="https://learnmasterypath.com/">All courses</a>
+        <a href="https://learnmasterypath.com/about.html">About</a>
+        <a href="https://learnmasterypath.com/contact.html">Contact</a>
+        <a href="https://learnmasterypath.com/nodejs-mastery-path/privacy/">Privacy Policy</a>
+        <a href="https://learnmasterypath.com/terms.html">Terms</a>
+        <a href="https://learnmasterypath.com/nodejs-mastery-path/license/">License</a>
+        <a href="https://learnmasterypath.com/verify/">Verify a certificate</a>
+      </nav>
+    </div>
+    <p class="mp-license-note">
+      © 2026 Vinod Kumar Sigilipelli · Except where otherwise noted, lesson content is licensed under
+      <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> and code examples under the
+      <a href="https://opensource.org/license/mit">MIT License</a>.
+    </p>
+  </div>
+
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.path", "navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "navigation.footer", "navigation.indexes", "toc.follow", "content.code.copy", "content.code.annotate", "search.suggest", "search.highlight"], "search": "../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.a5f9d56c.min.js"></script>
+      
+        <script src="../javascripts/progress-tracker.js"></script>
+      
+        <script src="../javascripts/final-quiz.js"></script>
+      
+    
+  </body>
+</html>
