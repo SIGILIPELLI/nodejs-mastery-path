@@ -1,6 +1,6 @@
 ---
 title: "Free Node.js Course: Runtime, Express APIs, Streams & Production Backends"
-description: "Free Node.js course — 36 lessons and 4 projects on the event loop, modules, Express REST APIs, PostgreSQL, auth, streams, workers, testing, and deploying services."
+description: "Free Node.js course — 36 lessons, 3 projects and 1 capstone on the event loop, modules, Express REST APIs, PostgreSQL, auth, streams, workers, testing, and deploying services."
 ---
 
 # Node.js Mastery Path
